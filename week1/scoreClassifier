@@ -1,0 +1,22 @@
+students = [
+    {"name": "Amit", "score": 92},
+    {"name": "Priya", "score": 78},
+    {"name": "Rohan", "score": 63},
+    {"name": "Sneha", "score": 45},
+    {"name": "Vikram", "score": 85},
+]
+print("--- Student Grade Classification ---")
+for student in students:
+    name = student["name"]
+    score = student["score"]
+    if score >= 90:
+        grade = "A (Excellent)"
+    elif score >= 80:
+        grade = "B (Very Good)"
+    elif score >= 70:
+        grade = "C (Good)"
+    elif score >= 50:
+        grade = "D (Pass)"
+    else:
+        grade = "F (Fail)"
+    print(f"Student: {name} | Score: {score} | Grade: {grade}")
